@@ -69,7 +69,48 @@
       background-color: lemonchiffon;
       display: inline-block;
       height: 100px;
+      overflow: hidden;
       padding: 35px 15px 15px 15px;
+    }
+  }
+  .example-7 {
+    .dog, .cat, .roger {
+      border: 2px solid deeppink;
+      height: 100px;
+      line-height: 100px;
+      vertical-align: middle;
+      text-align: center;
+      background: blanchedalmond;
+    }
+  }
+  .example-8 {
+    display: table;
+    height: 200px;
+    background: deeppink;
+    width: 100%;
+    .blob-of-variable-height-crap {
+      display: table-cell;
+      vertical-align: middle;
+      padding: 15px;
+      text-align: center;
+      .kitten-caption {
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: right;
+        transition: all 250ms;
+      }
+      .kitten-image {
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+        transition: all 250ms;
+      }
+      &:hover {
+        .kitten-image, .kitten-caption {
+          width: 500px;
+        }
+      }
     }
   }
 
